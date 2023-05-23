@@ -1,0 +1,133 @@
+* {
+  padding-left: 0%;
+  padding-top: 0%;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url(fundoGremio.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: #fff;
+}
+.logo {
+  height: 80px;
+}
+
+.inform {
+  width: 600px;
+  height: min-content;
+  padding: 10px;
+  line-height: 50px;
+  
+}
+input::placeholder{
+    color: #fff;
+}
+.input1 {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.445);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  width: 250px;
+}
+.input2 {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.445);
+  font-weight: bold;
+  width: 250px;
+}
+.input3 {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.445);
+  font-weight: bold;
+  width: 250px;
+}
+.input4 {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.445);
+  font-weight: bold;
+  width: 116px;
+}
+.input5 {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.445);
+  font-weight: bold;
+  width: 116px;
+
+}
+.button {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 130, 204);
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+}
+
+.resultado {
+  background-color: rgba(0, 166, 255, 0.411);
+  width: 600px;
+  height: max-content;
+  border-radius: 10px;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  display:flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: flex-start;
+  font-size: 15px;
+}
+.resFoto{
+    width: 150px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: black;
+}
+.resNome{
+    font-size: 20px;
+}
+.resDescricao{
+    font-size: 12px;
+}
+.resAltura{
+    font-size: 12px;
+}
+.resPeso{
+    font-size: 12px;
+}
+.resImc{
+    font-size: 15px;
+}
+.resRes{
+    background-color: rgb(0, 117, 35);
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
