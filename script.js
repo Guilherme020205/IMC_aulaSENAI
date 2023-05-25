@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-const resFoto = document.getElementById("resFoto")
+const resFoto = document.getElementById("resFoto");
 const resNome = document.getElementById("resNome");
 const resDescricao = document.getElementById("resDescricao");
 const resAltura = document.getElementById("resAltura");
@@ -7,17 +7,19 @@ const resPeso = document.getElementById("resPeso");
 const resImc = document.getElementById("resImc");
 const resRes = document.getElementById("resRes");
 
-form.onsubmit = (e) => {
+form.onsubmit = (e) => { 
  
     const inputs = new FormData(e.target);
 
-    e.preventDefault();
-
-   const foto = inputs.get('url_foto')
+    const foto = inputs.get('url_foto');
     const nome = inputs.get('nome');
     const descricao = inputs.get('descricao');
+    
     const altura = Number(inputs.get('altura'));
     const peso = Number(inputs.get('peso_corporal'));
+
+    resFoto.src = foto
+    
     const calcImc = (peso / (altura * altura)).toFixed(2)
 
 
@@ -66,4 +68,5 @@ form.onsubmit = (e) => {
         alert("Preencha os campos!!")
     }
 
+    return false
 };
